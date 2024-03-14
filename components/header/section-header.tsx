@@ -11,12 +11,13 @@ const SectionHeader = ({ buttonText, title, subTitle }: SectionHeaderProps) => {
  return (
   <div className="flex justify-between py-[28px] px-[130px]">
    <div className="align-middle">
-    <h4 className="text-lg">{subTitle}</h4>
+    {subTitle && <h4 className="text-lg">{subTitle}</h4>}
     <h1 className="text-[#002a48] font-bold text-2xl">{title}</h1>
    </div>
    <div>
-    <Button
-     className="mt-4
+    {buttonText && (
+     <Button
+      className="mt-4
      rounded-full 
                 text-[#003459] 
                 sm:text-[1rem] 
@@ -28,10 +29,11 @@ const SectionHeader = ({ buttonText, title, subTitle }: SectionHeaderProps) => {
                 border-2 
                 lg:py-[10px] 
                 lg:px-[28px]"
-    >
-     {buttonText}
-     <ChevronRight className="ml-2 h-4 w-4" />
-    </Button>
+     >
+      {buttonText}
+      <ChevronRight className="ml-2 h-4 w-4" />
+     </Button>
+    )}
    </div>
   </div>
  );
