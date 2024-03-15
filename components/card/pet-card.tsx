@@ -1,21 +1,11 @@
+import { PetProductType } from "@/types/pet-type";
 import Image from "next/image";
 
-type Gene = "Male" | "Female";
-
-type PetProductType = {
- id: string;
- title: string;
- gene: Gene;
- age: number;
- price: number;
- image: string;
-};
-
-interface PetProductProps {
+export interface PetProductProps {
  product: PetProductType;
 }
 
-const ProductCard = ({ product }: PetProductProps) => {
+const PetCard = ({ product }: PetProductProps) => {
  const { title, gene, age, price, image } = product;
 
  return (
@@ -91,4 +81,4 @@ const ProductCard = ({ product }: PetProductProps) => {
  );
 };
 
-export default ProductCard;
+export default PetCard;

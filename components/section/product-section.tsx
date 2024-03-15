@@ -1,17 +1,7 @@
-import ProductCard from "../card/product-card";
+import { PetProductType } from "@/types/pet-type";
+import PetCard from "../card/pet-card";
 
-type Gene = "Male" | "Female";
-
-type PetProduct = {
- id: string;
- title: string;
- gene: Gene;
- age: number;
- price: number;
- image: string;
-};
-
-const dummyPetData: PetProduct[] = [
+export const dummyPetData: PetProductType[] = [
  {
   id: "MO231",
   title: "MO231 - Pomeranian White",
@@ -82,7 +72,7 @@ const ProductSection = () => {
  return (
   <section className="py-[28px] sm:px-[130px] px-[80px] grid lg:grid-cols-4 sm:grid-cols-2  gap-4">
    {dummyPetData.map((pet) => (
-    <ProductCard key={pet.id} product={pet} />
+    <PetCard key={pet.id} product={pet} />
    ))}
   </section>
  );
