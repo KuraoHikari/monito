@@ -1,6 +1,36 @@
 import { PetProductType } from "@/types/pet-type";
-import PetCard from "../card/pet-card";
+import { ProductPetSection } from "./ProductPetSection";
+import { ProductSellingSection } from "./ProductSellingSection";
 
+export const dummyProductData: PetProductType[] = [
+ {
+  id: "PD001",
+  title: "Product 1",
+  product: "Cat Food",
+  size: 10,
+  promos: "Promo 1",
+  price: 1000,
+  image: "/product/image1.png",
+ },
+ {
+  id: "PD002",
+  title: "Product 2",
+  product: "Dog Food",
+  size: 20,
+  promos: "Promo 2",
+  price: 2000,
+  image: "/product/image2.png",
+ },
+ {
+  id: "PD003",
+  title: "Product 3",
+  product: "Toy",
+  size: 30,
+  promos: "Promo 3",
+  price: 3000,
+  image: "/product/image3.png",
+ },
+];
 export const dummyPetData: PetProductType[] = [
  {
   id: "MO231",
@@ -68,14 +98,4 @@ export const dummyPetData: PetProductType[] = [
  },
 ];
 
-const ProductSection = () => {
- return (
-  <section className="py-[28px] sm:px-[130px] px-[80px] grid lg:grid-cols-4 sm:grid-cols-2  gap-4">
-   {dummyPetData.map((pet) => (
-    <PetCard key={pet.id} product={pet} />
-   ))}
-  </section>
- );
-};
-
-export default ProductSection;
+export { ProductPetSection, ProductSellingSection };

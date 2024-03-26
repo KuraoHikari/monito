@@ -9,6 +9,7 @@ export type PetProductType = {
  age?: number;
  product?: Product;
  size?: number;
+ promos?: string;
  price: number;
  image: string;
 };
