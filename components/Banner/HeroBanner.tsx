@@ -106,8 +106,7 @@ export const HeroBanner = () => {
                  
                 sm:text-[1rem]
                 lg:px-[28px] 
-                lg:py-[10px]
-       "
+                lg:py-[10px]"
             >
               Explore Now
             </Button>
@@ -153,16 +152,16 @@ export const HeroBanner = () => {
         />
         <div
           className="
-            bg-moon-yellow 
             absolute 
-            bottom-0
+            bottom-0 
             left-52
             z-10
-            h-[335px]  
-            w-[335px] 
+            h-[335px]
+            w-[335px]  
+            origin-top-left 
 
-            origin-top-left
             rounded-[99px]
+            bg-moon-yellow
             [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)] 
 
             md:left-80 
@@ -176,68 +175,68 @@ export const HeroBanner = () => {
         />
         <div
           className="
-            bg-moon-yellow 
             absolute 
             left-[438.334px] 
             top-[564px] 
             h-[635px] 
             w-[635px] 
             origin-top-left 
-            rounded-[99px]
+            rounded-[99px] 
+            bg-moon-yellow
             opacity-40 
             [transform:matrix(0.5524,_0.8336,_-0.8336,_0.5524,_0,_0)]"
         />
 
         <div
           className="
-            bg-moon-yellow 
             absolute 
             -left-[64.3297px] 
             -top-[697px] 
             h-[635px] 
             w-[635px] 
             origin-top-left 
-            rounded-[99px]
+            rounded-[99px] 
+            bg-moon-yellow
             [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]"
         />
 
         <div
           className="
-            bg-moon-yellow
-            absolute 
+            absolute
             left-[140.6029px] 
             top-[163px] 
             -z-10 
             h-[67.1033px] 
             w-[67.1033px] 
             origin-top-left 
-            rounded-[20px]
+            rounded-[20px] 
+            bg-moon-yellow
             [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]"
         />
         <div
           className="
-            bg-moon-yellow
-            absolute 
+            absolute
             left-[762.192px] 
             top-[148px] 
             -z-10 
             h-[14.6264px] 
             w-[14.6264px] 
             origin-top-left 
-            rounded-[4px]
+            rounded-[4px] 
+            bg-moon-yellow
             [transform:matrix(0.9349,_0.355,_-0.355,_0.9349,_0,_0)]"
         />
 
         <div
           className="
-          bg-moon-yellow
-          absolute 
-          left-[728px] top-[210.678px] 
-          -z-10 
+          absolute
+          left-[728px] 
+          top-[210.678px] -z-10 
           h-[27.4976px] 
           w-[27.4976px] 
           origin-top-left 
-          rounded-[9px]
+          rounded-[9px] 
+          bg-moon-yellow
           [transform:matrix(0.9215,_-0.3883,_0.3883,_0.9215,_0,_0)]
     "
         />

@@ -1,130 +1,213 @@
-import { PlayCircle } from "lucide-react";
-import { Button } from "../ui/button";
+import { PlayCircle } from 'lucide-react';
+import { Button } from '../ui/button';
+import Image from 'next/image';
 
 export const SectionBanner = () => {
- return (
-  <div
-   className="
-        relative 
-        bg-dark-blue-80 
-        h-[378px] 
-        overflow-hidden
-        rounded-[50px]"
-  >
-   <div
-    className="z-10 
-        origin-top-left 
-        absolute
-
-        md:left-80
-        lg:top-[-380px]
-        lg:left-[635px]  
-        xl:left-[970px] 
-
-        bottom-0
-        left-52
-
-        lg:w-[735px] 
-        lg:h-[635px] 
-        md:w-[435px] 
-        md:h-[435px] 
-        w-[335px] 
-        h-[335px] 
-        rounded-[99px] 
-        bg-mon-yellow
-        [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]"
-   ></div>
-   <div className="absolute"></div>
-   <div className="grid grid-cols-2">
-    <div className=""></div>
-    <div className="z-20">
-     <div
+  return (
+    <div
       className="
-        text-dark-blue-80
-        text-right
-        pr-16
-        pt-10
-        "
-     >
-      {/* Hero Title */}
-      <div>
-       <h1
+        relative 
+        h-fit
+        overflow-hidden 
+        rounded-[50px]
+        bg-dark-blue"
+    >
+      {/* <div
         className="
-      z-10
-      text-dark-blue-80
-      text-[64px] 
-      leading-[68px]"
-       >
-        One more friend
-       </h1>
-      </div>
-      {/* Hero SubTitle */}
-      <div>
-       <h2
-        className="
-       text-dark-blue-80
-       font-bold 
-       text-[50px] 
-       leading-[60px]"
-       >
-        Thousands more fun!
-       </h2>
-      </div>
-      {/* Hero Desc */}
-      <div className="pl-32 my-4 ">
-       <p
-        className="
-   
-       text-neutral-80
-       font-medium 
-       text-[16px] 
-       leading-[24px] "
-       >
-        Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We
-        have 200+ different pets that can meet your needs!
-       </p>
-      </div>
-      {/* Hero Buton Section */}
-      <div className="ml-2 mt-7 z-10">
-       <Button
-        size="lg"
-        variant="outline"
-        className="
+          absolute 
+          bottom-0 
+          left-52
+
+          z-10
+          h-[335px]
+          w-[335px]  
+          origin-top-left 
+
+          rounded-[99px]
+          bg-moon-yellow
+
+          [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)] 
+
+          md:left-80 
+          md:h-[435px] 
+          md:w-[435px] 
+
+          lg:left-[635px] 
+          lg:top-[-380px] 
+          lg:h-[635px] 
+          lg:w-[735px]
+          
+          xl:left-[970px] 
+
+        
+          2xl:h-[935px]
+          2xl:w-[935px]"
+      ></div> */}
+      {/* <div className="absolute"></div> */}
+      <div className="grid grid-cols-1 px-16  lg:grid-cols-2">
+        <div className="">
+          <div
+            className="
+              absolute
+              left-60
+             
+              top-[42px]
+              z-10
+
+              h-[787px] 
+              w-[787px]
+              origin-top-left  
+              rounded-[99px] 
+
+              bg-dark-blue-80
+              [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]
+
+           
+
+              lg:left-52 
+
+          
+             
+              lg:h-[635px] 
+              lg:w-[735px]
+              
+              2xl:h-[635px]
+              2xl:w-[935px]"
+          ></div>
+          <Image
+            src="/banner/horizontalShotAdultGirlJeansOv.png"
+            alt=""
+            width={944}
+            height={693}
+            className="
+              absolute 
+              bottom-0 
+              z-20 
+              h-[348px]
+              w-[472px]
+
+             
+              xl:left-40
+              2xl:left-52
+              "
+          />
+        </div>
+        <div className="">
+          <div
+            className="
+              relative
+              z-20
+              text-center
+              text-dark-blue-80
+              lg:text-right
+              "
+          >
+            <div
+              className="
+              absolute
+              bottom-0 
+              left-60
+              -z-10
+
+              h-[1035px] 
+              w-[1035px]
+              origin-top-left  
+              rounded-[99px] 
+
+              bg-moon-yellow
+              [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]
+
+           
+
+              lg:left-52 
+
+          
+              lg:top-[-380px] 
+              lg:h-[635px] 
+              lg:w-[735px]
+              
+              2xl:h-[635px]
+              2xl:w-[935px]"
+            ></div>
+            <div className="z-20 py-10">
+              <div>
+                <h1
+                  className="
+                  z-10
+                  text-[64px]
+                  leading-[68px] 
+                  text-dark-blue-80"
+                >
+                  One more friend
+                </h1>
+              </div>
+              {/* Hero SubTitle */}
+              <div>
+                <h2
+                  className="
+                  text-[50px]
+                  font-bold 
+                  leading-[60px] 
+                  text-dark-blue-80"
+                >
+                  Thousands more fun!
+                </h2>
+              </div>
+              {/* Hero Desc */}
+              <div className="my-4 lg:pl-32 ">
+                <p
+                  className="
+                  text-[16px]
+                  font-medium 
+                  leading-[24px] 
+                  text-neutral-80"
+                >
+                  Having a pet means you have more joy, a new friend, a happy
+                  person who will always be with you to have fun. We have 200+
+                  different pets that can meet your needs!
+                </p>
+              </div>
+              {/* Hero Buton Section */}
+              <div className="z-10 ml-2 mt-7">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="
                 rounded-full 
-                text-dark-blue-80
-                sm:text-[1rem] 
+                border-2
+                border-dark-blue-80 
                 text-[12px] 
-                border-dark-blue-80
+                text-dark-blue-80
+                hover:border-none
                 hover:bg-dark-blue-40
                 hover:text-white
-                hover:border-none
-                border-2 
-                lg:py-[10px] 
-                lg:px-[28px]
-       "
-       >
-        View Intro <PlayCircle className="ml-2 h-4 w-4" />
-       </Button>
-       <Button
-        variant="default"
-        className="
+                sm:text-[1rem] 
+                lg:px-[28px] 
+                lg:py-[10px]"
+                >
+                  View Intro <PlayCircle className="ml-2 h-4 w-4" />
+                </Button>
+                <Button
+                  variant="default"
+                  className="
                 ml-3 
                 rounded-full 
-                text-gray-200 
-                sm:text-[1rem]
-                text-[12px] 
                 bg-dark-blue-80 
-                hover:bg-dark-blue-40
-                lg:py-[10px] 
-                lg:px-[28px]
-       "
-       >
-        Explore Now
-       </Button>
+                text-[12px]
+                text-gray-200 
+                hover:bg-dark-blue-40 
+                sm:text-[1rem]
+                lg:px-[28px] 
+                lg:py-[10px]"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+            {/* Hero Title */}
+          </div>
+        </div>
       </div>
-     </div>
     </div>
-   </div>
-  </div>
- );
+  );
 };

@@ -1,78 +1,73 @@
-import Image from "next/image";
-import { PetProductProps } from "./pet-card";
+import Image from 'next/image';
+import { PetProductProps } from './pet-card';
 
 export const PetCard = ({ product }: PetProductProps) => {
- const { title, gene, age, price, image } = product;
+  const { title, gene, age, price, image } = product;
 
- return (
-  <div
-   className="
-      
+  return (
+    <div
+      className="
         w-fit
-        p-2 
+        rounded-xl 
+        border-[0.1px] 
         border-gray-50 
-        border-[0.1px] rounded-xl  
-        shadow-lg
-        bg-white
-  "
-  >
-   {/* Image */}
+        bg-white  
+        p-2
+        shadow-lg"
+    >
+      {/* Image */}
 
-   <Image
-    src={image}
-    alt={`${title}.png`}
-    width={264}
-    height={264}
-    className="
-   
-        overflow-hidden 
-        object-cover
-        rounded-xl
-        "
-   />
+      <Image
+        src={image}
+        alt={`${title}.png`}
+        width={264}
+        height={264}
+        className="
+          overflow-hidden 
+          rounded-xl
+          object-cover"
+      />
 
-   {/* Desc */}
-   <div className="py-4">
-    {/* title */}
-    <div className="">
-     <h2
-      className="
-     text-[16px] 
-     leading-[24px]
-     font-extrabold
-  
-     "
-     >
-      {title}
-     </h2>
+      {/* Desc */}
+      <div className="py-4">
+        {/* title */}
+        <div className="">
+          <h2
+            className="
+               text-[16px]
+               font-extrabold 
+               leading-[24px]
+               text-neutral-100"
+          >
+            {title}
+          </h2>
+        </div>
+        {/* pet info */}
+        <div className="flex py-1">
+          <p
+            className="
+               text-[12px]   
+               font-bold 
+               leading-[18px]
+               tracking-wide
+               text-neutral-60"
+          >
+            Genne: {gene} - Age: 0{age} months
+          </p>
+        </div>
+        {/* price */}
+        <div>
+          <h4
+            className="
+               text-[14px]
+               font-extrabold 
+               leading-[20px]
+               text-neutral-100"
+          >
+            {price.toLocaleString('id')} VND
+          </h4>
+        </div>
+      </div>
     </div>
-    {/* pet info */}
-    <div className="flex py-1">
-     <p
-      className="
-      text-gray-500   
-      text-[12px] 
-      leading-[18px]
-      font-bold
-      tracking-wide
-      "
-     >
-      Genne: {gene} - Age: 0{age} months
-     </p>
-    </div>
-    {/* price */}
-    <div>
-     <h4
-      className="
-        text-[14px] 
-        leading-[20px]
-        font-extrabold
-        "
-     >
-      {price.toLocaleString("id")} VND
-     </h4>
-    </div>
-   </div>
-  </div>
- );
+  );
 };
