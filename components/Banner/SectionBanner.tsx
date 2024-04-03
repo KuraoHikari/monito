@@ -44,12 +44,11 @@ export const SectionBanner = () => {
           2xl:w-[935px]"
       ></div> */}
       {/* <div className="absolute"></div> */}
-      <div className="grid grid-cols-1 px-16  lg:grid-cols-2">
-        <div className="">
+      <div className="grid grid-cols-1 px-16  xl:grid-cols-2">
+        <div className="hidden xl:block">
           <div
             className="
               absolute
-              left-60
              
               top-[42px]
               z-10
@@ -61,15 +60,15 @@ export const SectionBanner = () => {
 
               bg-dark-blue-80
               [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]
+              
 
-           
+              lg:h-[735px] 
+              lg:w-[435px]
 
-              lg:left-52 
+              xl:left-0
 
-          
-             
-              lg:h-[635px] 
-              lg:w-[735px]
+              xl:h-[635px]
+              xl:w-[535px]
               
               2xl:h-[635px]
               2xl:w-[935px]"
@@ -80,15 +79,16 @@ export const SectionBanner = () => {
             width={944}
             height={693}
             className="
-              absolute 
-              bottom-0 
-              z-20 
-              h-[348px]
-              w-[472px]
+              absolute
 
+              bottom-0
+              z-20 
+            
+              h-[348px] 
+              w-[472px]
+              
              
-              xl:left-40
-              2xl:left-52
+              2xl:left-36
               "
           />
         </div>
@@ -99,7 +99,7 @@ export const SectionBanner = () => {
               z-20
               text-center
               text-dark-blue-80
-              lg:text-right
+              xl:text-right
               "
           >
             <div
@@ -119,12 +119,18 @@ export const SectionBanner = () => {
 
            
 
-              lg:left-52 
+              lg:left-44
 
           
               lg:top-[-380px] 
               lg:h-[635px] 
               lg:w-[735px]
+
+              xl:top-[-350px]
+              xl:h-[635px]
+              xl:w-[935px]
+              
+              2xl:top-[-380px]
               
               2xl:h-[635px]
               2xl:w-[935px]"
@@ -134,9 +140,18 @@ export const SectionBanner = () => {
                 <h1
                   className="
                   z-10
-                  text-[64px]
-                  leading-[68px] 
-                  text-dark-blue-80"
+                  text-[36px]
+                  leading-[54px]
+                  text-dark-blue-80 
+
+                  md:text-[48px]
+                  lg:text-[64px]
+
+                  xl:text-[54px]
+                  xl:leading-[54px]
+                  
+                  2xl:text-[64px]
+                  "
                 >
                   One more friend
                 </h1>
@@ -145,22 +160,33 @@ export const SectionBanner = () => {
               <div>
                 <h2
                   className="
-                  text-[50px]
+                  text-[24px]
                   font-bold 
-                  leading-[60px] 
-                  text-dark-blue-80"
+                  leading-[36px]
+                  text-dark-blue-80 
+                  md:text-[32px]
+                  lg:text-[40px]
+                  
+                  xl:leading-[60px]
+
+                  2xl:text-[50px]
+                  "
                 >
                   Thousands more fun!
                 </h2>
               </div>
               {/* Hero Desc */}
-              <div className="my-4 lg:pl-32 ">
+              <div className="my-4 ">
                 <p
                   className="
                   text-[16px]
                   font-medium 
                   leading-[24px] 
-                  text-neutral-80"
+                  text-neutral-80
+                  
+                  xl:text-[12px]
+                  2xl:text-[16px]
+                  "
                 >
                   Having a pet means you have more joy, a new friend, a happy
                   person who will always be with you to have fun. We have 200+
@@ -204,8 +230,61 @@ export const SectionBanner = () => {
                 </Button>
               </div>
             </div>
-            {/* Hero Title */}
           </div>
+        </div>
+        <div
+          className="
+          h-[340px]
+          xl:hidden
+        "
+        >
+          <div
+            className="
+              absolute
+             
+              top-[42px]
+              z-10
+
+              h-[787px] 
+              w-[787px]
+              origin-top-left  
+              rounded-[99px] 
+
+              bg-dark-blue-80
+              [transform:matrix(0.9046,_0.4263,_-0.4263,_0.9046,_0,_0)]
+              
+
+              lg:h-[735px] 
+              lg:w-[435px]
+
+              xl:left-0
+
+              xl:h-[635px]
+              xl:w-[535px]
+              
+              2xl:h-[635px]
+              2xl:w-[935px]"
+          ></div>
+          <Image
+            src="/banner/horizontalShotAdultGirlJeansOv.png"
+            alt=""
+            width={944}
+            height={693}
+            className="
+              absolute
+              bottom-0
+              left-0
+
+              z-20
+            
+              h-[349px]
+              w-[524px]
+
+              sm:left-20
+              md:left-32
+              lg:left-40
+              "
+          />
         </div>
       </div>
     </div>

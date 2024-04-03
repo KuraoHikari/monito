@@ -124,14 +124,16 @@ export const HeroBanner = () => {
 
               z-20 
               
-              lg:left-[330px] 
+              lg:left-[230px] 
               lg:top-[84px] 
-              xl:left-[730px]"
+              xl:left-[430px]
+              2xl:left-[530px]"
         />
         <div
           className="
             absolute 
-            bottom-0 left-32
+            bottom-0 
+            left-32
             z-10  
             h-[335px]  
             w-[335px]
@@ -148,7 +150,12 @@ export const HeroBanner = () => {
             lg:h-[635px]
 
             lg:w-[635px] 
-            xl:left-[900px]"
+            xl:left-[600px]
+            xl:top-[310px]
+            
+            2xl:left-[650px]
+            2xl:top-[310px]
+            "
         />
         <div
           className="
@@ -171,7 +178,12 @@ export const HeroBanner = () => {
             lg:top-[180px] 
             lg:h-[635px] 
             lg:w-[635px] 
-            xl:left-[1165px]"
+
+            xl:left-[830px]
+            
+            
+            2xl:left-[900px]
+            "
         />
         <div
           className="
