@@ -94,6 +94,7 @@ export const HeroBanner = () => {
             </Button>
             <Button
               variant="default"
+              size="lg"
               className="
                 ml-3 
                 rounded-full 

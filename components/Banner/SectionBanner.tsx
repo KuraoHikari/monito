@@ -194,11 +194,86 @@ export const SectionBanner = () => {
                 </p>
               </div>
               {/* Hero Buton Section */}
-              <div className="z-10 ml-2 mt-7">
+              <div className="z-10 ml-2 mt-7 hidden sm:block">
                 <Button
                   size="lg"
                   variant="outline"
                   className="
+                  rounded-full
+                border-2 
+                border-dark-blue-80
+                text-[12px] 
+                text-dark-blue-80 
+                hover:border-none
+                hover:bg-dark-blue-40
+                hover:text-white
+               
+                sm:text-[1rem] 
+                lg:px-[28px] 
+                lg:py-[10px]"
+                >
+                  View Intro <PlayCircle className="ml-2 h-4 w-4" />
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="
+                  hidden
+                rounded-full 
+                border-2
+                border-dark-blue-80 
+                text-[12px] 
+                text-dark-blue-80
+                hover:border-none
+                hover:bg-dark-blue-40
+                hover:text-white
+                sm:text-[1rem] 
+                lg:px-[28px] 
+                lg:py-[10px]"
+                >
+                  View Intro <PlayCircle className="ml-2 h-4 w-4" />
+                </Button>
+                <Button
+                  variant="default"
+                  className="
+                ml-3 
+                rounded-full 
+                bg-dark-blue-80 
+                text-[12px]
+                text-gray-200 
+                hover:bg-dark-blue-40 
+                sm:text-[1rem]
+                lg:px-[28px] 
+                lg:py-[10px]"
+                >
+                  Explore Now
+                </Button>
+              </div>
+              <div className="z-10 ml-2 mt-7 sm:hidden">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="
+                  rounded-full
+                border-2 
+                border-dark-blue-80
+                text-[12px] 
+                text-dark-blue-80 
+                hover:border-none
+                hover:bg-dark-blue-40
+                hover:text-white
+               
+                sm:text-[1rem] 
+                lg:px-[28px] 
+                lg:py-[10px]"
+                >
+                  View Intro <PlayCircle className="ml-2 h-4 w-4" />
+                </Button>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="
+                  hidden
                 rounded-full 
                 border-2
                 border-dark-blue-80 
@@ -234,7 +309,8 @@ export const SectionBanner = () => {
         </div>
         <div
           className="
-          h-[340px]
+          h-[250px]
+          sm:h-[340px]
           xl:hidden
         "
         >
@@ -277,10 +353,10 @@ export const SectionBanner = () => {
 
               z-20
             
-              h-[349px]
-              w-[524px]
-
               sm:left-20
+              sm:h-[349px]
+
+              sm:w-[524px]
               md:left-32
               lg:left-40
               "
