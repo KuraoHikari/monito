@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import { PetProductProps } from './pet-card';
+import { GiftIcon } from 'lucide-react';
+import { Button } from '../ui/button';
 
-export const PetCard = ({ product }: PetProductProps) => {
-  const { title, gene, age, price, image } = product;
+export const PetCard = ({ item }: PetProductProps) => {
+  const { title, gene, age, price, image, size, product, promos } = item;
 
   return (
     <div
@@ -52,7 +54,9 @@ export const PetCard = ({ product }: PetProductProps) => {
                tracking-wide
                text-neutral-60"
           >
-            Genne: {gene} - Age: 0{age} months
+            {product
+              ? `Product: ${product} ${`- Size: ${size}kg`}`
+              : `Genne: ${gene} - Age: 0${age} months`}
           </p>
         </div>
         {/* price */}
@@ -67,6 +71,28 @@ export const PetCard = ({ product }: PetProductProps) => {
             {price.toLocaleString('id')} VND
           </h4>
         </div>
+        {promos && (
+          <div
+            className="
+                mt-2
+                inline-flex 
+                h-8
+                w-full
+                items-center 
+                gap-2 
+                whitespace-nowrap
+                rounded-[8px]  
+                bg-moon-yellow-40 
+                px-2
+                text-[14px] 
+                font-bold text-dark-blue-80
+                ring-offset-background
+               "
+          >
+            <GiftIcon className="h-4 w-4 text-pink-red" />
+            {promos}
+          </div>
+        )}
       </div>
     </div>
   );

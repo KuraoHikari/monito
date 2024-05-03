@@ -1,7 +1,11 @@
 import { HeroBanner, SectionBanner } from '@/components/Banner';
 import SectionHeader from '@/components/header/section-header';
 import Navbar from '@/components/navbar/navbar';
-import { ProductPetSection } from '@/components/section/ProductPetSection';
+import {
+  dummyPetData,
+  dummyProductData,
+} from '@/components/section/product-section';
+import ProductPetSection from '@/components/section/ProductPetSection';
 import Image from 'next/image';
 
 export default function Home() {
@@ -14,11 +18,11 @@ export default function Home() {
         buttonText="View more"
         subTitle="what's new?"
       />
-      <ProductPetSection />
+      <ProductPetSection products={dummyPetData} />
       <div className="mx-4 lg:mx-32">
         <SectionBanner />
       </div>
-
+      <ProductPetSection products={dummyProductData} />
       {/* <HeroBanner /> */}
     </div>
   );

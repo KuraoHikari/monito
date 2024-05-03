@@ -181,8 +181,6 @@ export const HeroBanner = () => {
             lg:w-[635px] 
 
             xl:left-[830px]
-            
-            
             2xl:left-[900px]
             "
         />
@@ -250,8 +248,7 @@ export const HeroBanner = () => {
           origin-top-left 
           rounded-[9px] 
           bg-moon-yellow
-          [transform:matrix(0.9215,_-0.3883,_0.3883,_0.9215,_0,_0)]
-    "
+          [transform:matrix(0.9215,_-0.3883,_0.3883,_0.9215,_0,_0)]"
         />
 
         <div

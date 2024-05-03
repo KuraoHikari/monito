@@ -1,12 +1,19 @@
-import { PetCard } from "../card/PetCard";
-import { dummyPetData } from "./product-section";
+import { PetProductType } from '@/types/pet-type';
 
-export const ProductPetSection = () => {
- return (
-  <section className="py-[28px] sm:px-[130px] px-[80px] grid lg:grid-cols-4 sm:grid-cols-2  gap-4">
-   {dummyPetData.map((pet) => (
-    <PetCard key={pet.id} product={pet} />
-   ))}
-  </section>
- );
+import { PetCard } from '../card/PetCard';
+
+type ProductPetSectionProps = {
+  products: PetProductType[];
 };
+
+const ProductPetSection: React.FC<ProductPetSectionProps> = ({ products }) => {
+  return (
+    <section className="grid gap-4 px-[80px] py-[28px] sm:grid-cols-2 sm:px-[130px]  lg:grid-cols-4">
+      {products.map((pet) => (
+        <PetCard key={pet.id} item={pet} />
+      ))}
+    </section>
+  );
+};
+
+export default ProductPetSection;
