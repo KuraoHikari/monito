@@ -46,6 +46,8 @@ const config = {
         'pink-red': '#ff564f',
         'green-light': '#34c759',
         'orange-shine': '#ff912c',
+        'orange-shine-20': '#FDD4A6',
+        'orange-shine-40': '#FFB775',
         'blue-sea': '#00a7e7',
         'neutral-100': '#00171f',
         'neutral-80': '#242b33',

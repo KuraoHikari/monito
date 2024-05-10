@@ -1,4 +1,5 @@
-import { HeroBanner } from "./HeroBanner";
-import { SectionBanner } from "./SectionBanner";
+import { HeroBanner } from './HeroBanner';
 
-export { HeroBanner, SectionBanner };
+import { SectionBannerBrown } from './SectionBannerBrown';
+
+export { HeroBanner, SectionBannerBrown };

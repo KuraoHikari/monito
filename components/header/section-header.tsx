@@ -9,7 +9,7 @@ interface SectionHeaderProps {
 
 const SectionHeader = ({ buttonText, title, subTitle }: SectionHeaderProps) => {
   return (
-    <div className="flex justify-between px-5 py-[28px] sm:px-[130px]">
+    <div className="flex justify-between px-5 py-[28px] lg:px-[130px]">
       <div className="align-middle">
         {subTitle && <h4 className="text-lg">{subTitle}</h4>}
         <h1 className="text-2xl font-bold text-[#002a48]">{title}</h1>

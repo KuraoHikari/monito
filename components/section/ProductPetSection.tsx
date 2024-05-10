@@ -8,7 +8,7 @@ type ProductPetSectionProps = {
 
 const ProductPetSection: React.FC<ProductPetSectionProps> = ({ products }) => {
   return (
-    <section className="grid gap-4 px-[80px] py-[28px] sm:grid-cols-2 sm:px-[130px]  lg:grid-cols-4">
+    <section className="grid gap-4 px-[80px] py-[28px] sm:grid-cols-2 lg:grid-cols-4  lg:px-[130px]">
       {products.map((pet) => (
         <PetCard key={pet.id} item={pet} />
       ))}
